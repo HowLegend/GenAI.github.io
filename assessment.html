@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科研诚信与负责任 AI 使用在线测评</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark">信</span><span><strong>科研诚信教育平台</strong><small>Academic Integrity Learning</small></span></a>
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="打开导航菜单">
+        <label class="nav-button" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+        <nav class="site-nav" aria-label="主导航">
+            <a href="index.html#policy">政策导读</a>
+            <a href="index.html#guide">AI 规范</a>
+            <a href="cases.html">案例库</a>
+            <a href="resources.html">学习资源</a>
+            <a href="assessment.html">在线测评</a>
+            <a href="about.html">项目说明</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Self Check</p>
+            <h1>科研诚信与负责任 AI 使用在线测评</h1>
+            <p>本测评用于学习后自查，不作为正式处分或成绩依据。题目覆盖 AI 写作、数据诚信、文献引用、隐私合规、图像处理、代码复现和投稿披露等场景。</p>
+        </section>
+
+        <section class="section">
+            <div id="quiz-app" class="quiz-panel wide">
+                <div class="quiz-status">
+                    <span id="quiz-progress">第 1 题 / 30 题</span>
+                    <span>当前得分 <strong id="quiz-score">0</strong></span>
+                </div>
+                <p id="question-meta" class="question-meta"></p>
+                <h2 id="question-text">题目加载中</h2>
+                <div id="options-container" class="options"></div>
+                <div id="quiz-explanation" class="explanation" hidden></div>
+                <button id="next-btn" class="btn primary quiz-next" type="button" hidden>下一题</button>
+
+                <div id="result-panel" class="result-panel" hidden>
+                    <p class="eyebrow">Result</p>
+                    <strong class="result-score">0 分</strong>
+                    <p class="result-advice"></p>
+                    <div class="hero-actions">
+                        <button class="btn primary" type="button" data-restart-quiz>重新测评</button>
+                        <a class="btn outline" href="cases.html">返回案例库</a>
+                    </div>
+                    <div id="wrong-review" class="wrong-review"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>科研诚信教育平台 · Academic Committee · Information Center · 2026</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学习资源中心</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark">信</span><span><strong>科研诚信教育平台</strong><small>Academic Integrity Learning</small></span></a>
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="打开导航菜单">
+        <label class="nav-button" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+        <nav class="site-nav" aria-label="主导航">
+            <a href="index.html#policy">政策导读</a>
+            <a href="index.html#guide">AI 规范</a>
+            <a href="cases.html">案例库</a>
+            <a href="resources.html">学习资源</a>
+            <a href="assessment.html">在线测评</a>
+            <a href="about.html">项目说明</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Resources</p>
+            <h1>学习资源中心</h1>
+            <p>集中整理视频课程、AI 使用记录表、披露模板、参考文献核验清单和投稿前检查清单，便于学习后自查。</p>
+        </section>
+
+        <section class="section">
+            <div class="section-head">
+                <p class="eyebrow">Video Courses</p>
+                <h2>视频课程</h2>
+                <p>视频文件均使用相对路径引用，可直接随静态网站部署到 OSS。</p>
+            </div>
+            <div class="video-grid">
+                <article class="video-card"><video controls preload="metadata" playsinline src="videos/01.mp4"></video><div class="video-content"><span>videos/01.mp4</span><h3>科研诚信与 AI 时代的学习边界</h3><p>了解 AI 辅助学习的边界和作者责任。</p></div></article>
+                <article class="video-card"><video controls preload="metadata" playsinline src="videos/02.mp4"></video><div class="video-content"><span>videos/02.mp4</span><h3>数据、图片与参考文献风险识别</h3><p>识别科研材料中常见的真实性和可追溯风险。</p></div></article>
+                <article class="video-card"><video controls preload="metadata" playsinline src="videos/03.mp4"></video><div class="video-content"><span>videos/03.mp4</span><h3>AI 使用记录与论文披露</h3><p>学习如何记录、核验和披露 AI 辅助过程。</p></div></article>
+            </div>
+        </section>
+
+        <section id="downloads" class="section muted">
+            <div class="section-head">
+                <p class="eyebrow">Templates</p>
+                <h2>模板与清单下载</h2>
+                <p>如果文件暂未存在，页面仍保留链接；后续将对应 PDF 放入 <code>docs/</code> 文件夹即可。</p>
+            </div>
+            <div class="resource-grid">
+                <article class="resource-card"><span>记录模板</span><h3>AI 使用记录表</h3><p>记录工具、用途、提示词和人工修改过程。</p><a class="btn outline" href="docs/ai-use-log-template.pdf" download>下载</a></article>
+                <article class="resource-card"><span>披露模板</span><h3>AI 使用披露模板</h3><p>规范说明 AI 工具在论文或报告中的参与范围。</p><a class="btn outline" href="docs/ai-disclosure-template.pdf" download>下载</a></article>
+                <article class="resource-card"><span>自查清单</span><h3>参考文献核验清单</h3><p>核验 DOI、期刊、作者、年份和原始来源。</p><a class="btn outline" href="docs/reference-checklist.pdf" download>下载</a></article>
+                <article class="resource-card"><span>自查清单</span><h3>科研诚信自查清单</h3><p>检查数据、图片、伦理、署名和过程记录。</p><a class="btn outline" href="docs/integrity-self-checklist.pdf" download>下载</a></article>
+                <article class="resource-card"><span>投稿检查</span><h3>投稿前检查清单</h3><p>确认披露、数据可追溯、图片处理和作者承诺。</p><a class="btn outline" href="docs/submission-checklist.pdf" download>下载</a></article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>科研诚信教育平台 · Academic Committee · Information Center · 2026</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

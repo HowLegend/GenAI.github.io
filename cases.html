@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科研诚信风险案例库</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark">信</span><span><strong>科研诚信教育平台</strong><small>Academic Integrity Learning</small></span></a>
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="打开导航菜单">
+        <label class="nav-button" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+        <nav class="site-nav" aria-label="主导航">
+            <a href="index.html#policy">政策导读</a>
+            <a href="index.html#guide">AI 规范</a>
+            <a href="cases.html">案例库</a>
+            <a href="resources.html">学习资源</a>
+            <a href="assessment.html">在线测评</a>
+            <a href="about.html">项目说明</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Case Library</p>
+            <h1>科研诚信风险案例库</h1>
+            <p>通过真实学习和科研场景，帮助学生识别 AI 使用、数据处理、文献引用、隐私合规和论文写作中的常见风险。所有案例均为教学情境案例。</p>
+        </section>
+
+        <section class="section">
+            <div class="filter-bar" aria-label="案例筛选">
+                <button class="active" data-case-filter="全部" type="button">全部</button>
+                <button data-case-filter="AI 写作" type="button">AI 写作</button>
+                <button data-case-filter="数据诚信" type="button">数据诚信</button>
+                <button data-case-filter="文献引用" type="button">文献引用</button>
+                <button data-case-filter="隐私合规" type="button">隐私合规</button>
+                <button data-case-filter="图像与代码" type="button">图像与代码</button>
+                <button data-case-filter="投稿披露" type="button">投稿披露</button>
+                <button data-case-filter="高风险" type="button">高风险</button>
+                <button data-case-filter="中风险" type="button">中风险</button>
+                <button data-case-filter="低风险" type="button">低风险</button>
+            </div>
+            <p id="case-count" class="count-label">18 个案例</p>
+            <div id="case-list" class="case-grid"></div>
+        </section>
+    </main>
+
+    <div id="case-modal" class="modal" hidden>
+        <div class="modal-backdrop" data-close-modal></div>
+        <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" type="button" data-close-modal aria-label="关闭案例详情">×</button>
+            <p class="modal-meta"></p>
+            <h2 id="modal-title" class="modal-title"></h2>
+            <div class="modal-body"></div>
+        </article>
+    </div>
+
+    <footer class="site-footer">
+        <p>科研诚信教育平台 · Academic Committee · Information Center · 2026</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/cases.js"></script>
+</body>
+
+</html>
