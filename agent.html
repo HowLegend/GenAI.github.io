@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI科研诚信官</title>
+    <link rel="stylesheet" href="style.css?v=20260703-agent">
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark">信</span><span><strong>生成式AI科研诚信教育平台</strong><small>Academic Integrity Learning</small></span></a>
+        <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="打开导航菜单">
+        <label class="nav-button" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+        <nav class="site-nav" aria-label="主导航">
+            <a href="index.html#policy">政策导读</a>
+            <a href="index.html#guide">AI 规范</a>
+            <a href="cases.html">案例库</a>
+            <a href="agent.html">AI 智能体</a>
+            <a href="resources.html">学习资源</a>
+            <a href="assessment.html">在线测评</a>
+            <a href="about.html">项目说明</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero agent-hero">
+            <p class="eyebrow">Simulated AI Assistant</p>
+            <h1>AI科研诚信官</h1>
+            <p>这是一个AI智能体对话界面。它可以围绕科研诚信、AI 使用边界、文献核验、数据合规和论文披露给出学习提示。</p>
+        </section>
+
+        <section class="section">
+            <div class="agent-layout">
+                <aside class="agent-profile">
+                    <span class="agent-avatar">AI</span>
+                    <h2>AI科研诚信官</h2>
+                    <p>定位：科研诚信学习助手</p>
+                    <ul>
+                        <li>提示 AI 写作边界</li>
+                        <li>提醒文献与 DOI 核验</li>
+                        <li>说明数据与隐私合规</li>
+                        <li>帮助准备投稿前自查</li>
+                    </ul>
+                    <p class="agent-note">模拟模式：不会上传、存储或发送你的输入。</p>
+                </aside>
+
+                <section class="chat-panel" aria-label="AI科研诚信官模拟对话">
+                    <div class="chat-header">
+                        <div>
+                            <strong>AI科研诚信官</strong>
+                            <span>在线 · 模拟回复</span>
+                        </div>
+                        <button class="btn outline small" type="button" id="clear-chat">清空对话</button>
+                    </div>
+                    <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+                    <form class="chat-form" id="chat-form">
+                        <label class="sr-only" for="chat-input">输入你的问题</label>
+                        <textarea id="chat-input" rows="2" placeholder="例如：我可以让 AI 帮我润色论文吗？"></textarea>
+                        <button class="btn primary" type="submit">发送</button>
+                    </form>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>生成式AI科研诚信教育平台 · Academic Committee · Information Center · 2026</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/agent.js"></script>
+</body>
+
+</html>
