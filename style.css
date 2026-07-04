@@ -937,6 +937,157 @@ code {
     border-top-color: var(--red);
 }
 
+.ai-use-principles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.ai-use-principles article {
+    padding: 20px;
+    background:
+        linear-gradient(135deg, rgba(42, 90, 158, 0.09), rgba(255, 255, 255, 0.48)),
+        var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.ai-use-principles strong {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--blue-dark);
+    font-size: 1.04rem;
+}
+
+.ai-use-principles p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.ai-framework-grid {
+    display: grid;
+    gap: 18px;
+}
+
+.ai-framework-card {
+    --framework-accent: var(--blue);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-top: 5px solid var(--framework-accent);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.ai-framework-card.research {
+    --framework-accent: var(--blue);
+}
+
+.ai-framework-card.submission {
+    --framework-accent: var(--gold);
+}
+
+.ai-framework-card.archive {
+    --framework-accent: var(--green);
+}
+
+.ai-framework-card.publishers {
+    --framework-accent: #7a5cbd;
+}
+
+.ai-framework-card summary {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    gap: 16px;
+    align-items: start;
+    padding: 22px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.ai-framework-card summary::-webkit-details-marker {
+    display: none;
+}
+
+.ai-framework-card summary > span {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    color: #ffffff;
+    background: var(--framework-accent);
+    border-radius: 10px;
+    font-weight: 950;
+}
+
+.ai-framework-card summary h3 {
+    margin: 0 0 8px;
+    color: var(--blue-dark);
+    line-height: 1.25;
+}
+
+.ai-framework-card summary p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.ai-framework-card summary div::after {
+    content: "点击展开详细信息";
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--framework-accent);
+    font-size: 0.86rem;
+    font-weight: 900;
+}
+
+.ai-framework-card[open] summary div::after {
+    content: "点击收起详细信息";
+}
+
+.ai-detail-table,
+.publisher-rules {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    padding: 0 22px 22px;
+}
+
+.ai-detail-table article,
+.publisher-rules article {
+    padding: 16px;
+    background: var(--soft);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+}
+
+.ai-detail-table h4,
+.publisher-rules h4 {
+    margin: 0 0 8px;
+    color: var(--blue-dark);
+}
+
+.ai-detail-table p,
+.publisher-rules p {
+    margin: 8px 0 0;
+    color: var(--muted);
+}
+
+.ai-detail-table strong {
+    color: var(--blue-dark);
+}
+
+.ai-source-note {
+    margin: 0 22px 22px;
+    padding: 13px 15px;
+    color: var(--blue-dark);
+    background: rgba(215, 154, 43, 0.12);
+    border-left: 4px solid var(--gold);
+    border-radius: 8px;
+    font-weight: 800;
+}
+
 .traffic-light {
     display: block;
     width: 34px;
@@ -1557,14 +1708,17 @@ code {
     .timeline,
     .stats-grid,
     .footer-grid,
-    .policy-summary {
+    .policy-summary,
+    .ai-use-principles {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .traffic-grid,
     .case-grid,
     .video-grid,
-    .policy-topic-grid {
+    .policy-topic-grid,
+    .ai-detail-table,
+    .publisher-rules {
         grid-template-columns: 1fr;
     }
 
@@ -1690,6 +1844,7 @@ code {
     .stats-grid,
     .footer-grid,
     .policy-summary,
+    .ai-use-principles,
     .policy-topic-grid {
         grid-template-columns: 1fr;
     }
@@ -1721,6 +1876,9 @@ code {
     .policy-topic-card,
     .policy-source-panel,
     .agent-profile,
+    .ai-framework-card summary,
+    .ai-detail-table article,
+    .publisher-rules article,
     .resource-card,
     .quiz-panel,
     .cta-panel,
@@ -1734,6 +1892,19 @@ code {
 
     .chat-message {
         max-width: 94%;
+    }
+
+    .ai-framework-card summary {
+        grid-template-columns: 1fr;
+    }
+
+    .ai-detail-table,
+    .publisher-rules {
+        padding: 0 20px 20px;
+    }
+
+    .ai-source-note {
+        margin: 0 20px 20px;
     }
 }
 

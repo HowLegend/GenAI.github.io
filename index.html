@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>生成式AI科研诚信教育平台</title>
-    <link rel="stylesheet" href="style.css?v=20260703-agent">
+    <link rel="stylesheet" href="style.css?v=20260704-guide">
 </head>
 
 <body>
@@ -305,12 +305,118 @@
             <div class="section-head">
                 <p class="eyebrow">Responsible AI</p>
                 <h2>AI 辅助科研使用规范</h2>
-                <p>AI 可以提升学习效率，但不能替代作者的学术判断、研究责任和合规义务。</p>
+                <p>从研究写作、投稿审稿、出版后管理和出版机构要求四个层面梳理 AI 使用边界。</p>
             </div>
-            <div class="traffic-grid">
-                <article class="traffic-card safe"><span class="traffic-light"></span><h3>推荐使用</h3><p>文献检索思路整理、语言润色、翻译辅助、代码报错解释、学习资料总结、研究计划查漏补缺。</p></article>
-                <article class="traffic-card cautious"><span class="traffic-light"></span><h3>谨慎使用</h3><p>研究假设生成、大段文本改写、统计结果解释、图像处理、代码生成、投稿回复建议。</p></article>
-                <article class="traffic-card danger"><span class="traffic-light"></span><h3>禁止使用</h3><p>代写论文、伪造数据、生成虚假文献、上传敏感资料、隐瞒 AI 实质性参与、使用 AI 规避学术审查。</p></article>
+
+            <div class="ai-use-principles">
+                <article><strong>作者责任不转移</strong><p>AIGC 不能成为作者，也不能替代作者对数据、图像、引文和科学结论承担责任。</p></article>
+                <article><strong>使用过程要可披露</strong><p>涉及生成、改写、分析、图像或投稿回复时，应记录工具、版本、时间、提示问题和参与部分。</p></article>
+                <article><strong>敏感材料不上云</strong><p>稿件全文、核心数据、评审报告、未公开研究资料不应上传至公共 AIGC 工具。</p></article>
+            </div>
+
+            <div class="ai-framework-grid">
+                <details class="ai-framework-card research" open>
+                    <summary>
+                        <span>01</span>
+                        <div>
+                            <h3>研究开展和论文撰写阶段</h3>
+                            <p>适用于资料收集、统计分析、图表制作、文字撰写、语言润色和引文整理。</p>
+                        </div>
+                    </summary>
+                    <div class="ai-detail-table">
+                        <article>
+                            <h4>资料收集</h4>
+                            <p><strong>允许/推荐：</strong>辅助文献调研、关键词检索、分类梳理、跟踪研究进展，解答简单概念问题。</p>
+                            <p><strong>注意事项：</strong>必须验证参考文献真实性，人工监督概念解答，清洗公众或专家观点数据以避免偏见。</p>
+                        </article>
+                        <article>
+                            <h4>统计分析</h4>
+                            <p><strong>允许/推荐：</strong>辅助数据解读、统计计算、基础分析，提供统计方法建议。</p>
+                            <p><strong>注意事项：</strong>数据必须合法获取，分析结果需人工验证，不可替代独立解读与专业判断。</p>
+                        </article>
+                        <article>
+                            <h4>图表制作</h4>
+                            <p><strong>允许/推荐：</strong>推荐统计图表类型，优化字体、标注、图例、颜色，调整亮度/对比度且不丢失原始信息。</p>
+                            <p><strong>禁止/注意：</strong>禁止直接生成或篡改关键实验图像，禁止用 AIGC 制作图文摘要，不得局部增强、删除或添加图像特征。</p>
+                        </article>
+                        <article>
+                            <h4>文字、语言和引文</h4>
+                            <p><strong>允许/推荐：</strong>优化文本可读性和逻辑，生成论文大纲，辅助综述整理，语法纠错和句式优化，检查引文格式。</p>
+                            <p><strong>禁止/注意：</strong>禁止撰写全文、直接解释数据或得出科学结论；摘要、综述和引文必须与原始出版物核对。</p>
+                        </article>
+                    </div>
+                </details>
+
+                <details class="ai-framework-card submission">
+                    <summary>
+                        <span>02</span>
+                        <div>
+                            <h3>投稿与审稿阶段</h3>
+                            <p>适用于作者署名、规范引用、披露声明、稿件评审与作者回复。</p>
+                        </div>
+                    </summary>
+                    <div class="ai-detail-table">
+                        <article>
+                            <h4>作者署名与规范引用</h4>
+                            <p><strong>核心要求：</strong>AIGC 不得列为作者，因为其无法律地位，不能承担版权责任和学术责任。</p>
+                            <p><strong>引用边界：</strong>标注 AIGC 提供资料的底层数据来源、工具及获取/处理方式，未验证真实性的内容不得引用。</p>
+                        </article>
+                        <article>
+                            <h4>披露和声明</h4>
+                            <p><strong>建议披露：</strong>使用者、工具及版本、使用时间、提示问题、生成或参与部分，以及相关记录。</p>
+                            <p><strong>风险提醒：</strong>未披露 AIGC 使用情况可能构成学术不端或违反期刊政策。</p>
+                        </article>
+                        <article>
+                            <h4>评审委托方与评审人员</h4>
+                            <p><strong>委托方：</strong>应制定明确 AIGC 使用政策，说明许可范围、禁用情形，并开展培训。</p>
+                            <p><strong>评审人员：</strong>可辅助提取关键信息或优化评审意见表述，但不得上传稿件全文、核心数据或被审稿内容至公共 AIGC。</p>
+                        </article>
+                        <article>
+                            <h4>作者回复</h4>
+                            <p><strong>允许/推荐：</strong>辅助构思回复框架、整理内容和语言润色。</p>
+                            <p><strong>禁止/注意：</strong>不得上传评审报告全文或可识别细节，对回复内容的准确性和专业性负全责。</p>
+                        </article>
+                    </div>
+                </details>
+
+                <details class="ai-framework-card archive">
+                    <summary>
+                        <span>03</span>
+                        <div>
+                            <h3>论文发表与出版后</h3>
+                            <p>适用于数据存档、共享材料、AIGC 生成内容留痕和检测识别。</p>
+                        </div>
+                    </summary>
+                    <div class="ai-detail-table">
+                        <article>
+                            <h4>数据存档与共享</h4>
+                            <p><strong>允许/推荐：</strong>公开原始数据及过程材料，存档 AIGC 生成或处理的文本、图片、程序，作为补充材料。</p>
+                            <p><strong>注意事项：</strong>严格核查数据来源、处理方法和存储方式，确保完整真实和可追溯。</p>
+                        </article>
+                        <article>
+                            <h4>AIGC 检测与识别</h4>
+                            <p><strong>允许/推荐：</strong>期刊或编辑可使用合规检测工具，并结合人工审查。</p>
+                            <p><strong>注意事项：</strong>防范检测工具造成信息泄露，警惕误报，检测结果只能作为辅助判断依据。</p>
+                        </article>
+                    </div>
+                </details>
+
+                <details class="ai-framework-card publishers">
+                    <summary>
+                        <span>04</span>
+                        <div>
+                            <h3>出版机构与组织共识</h3>
+                            <p>综合 COPE、ACS、Elsevier、Springer Nature、Taylor & Francis、Wiley 等机构要求。</p>
+                        </div>
+                    </summary>
+                    <div class="publisher-rules">
+                        <article><h4>共同底线</h4><p>AI 工具不能作为作者，作者对 AI 生成或辅助生成的内容负全部责任。</p></article>
+                        <article><h4>文字使用</h4><p>多数机构允许语言润色、精简、可读性提升，但生成内容通常需要在方法、致谢或投稿信中披露。</p></article>
+                        <article><h4>图像使用</h4><p>多家机构禁止 AI 创建或修改论文图像、图表、图文摘要和原始数据；合理亮度/对比度调整也需不掩盖原始信息。</p></article>
+                        <article><h4>数据与版权</h4><p>使用 AIGC 前需关注数据安全、版权许可、商业用途授权和工具服务条款，避免未经授权用于模型训练。</p></article>
+                    </div>
+                    <p class="ai-source-note">参考：《学术出版中AIGC使用边界指南3.0》及国际主流出版机构/组织 AI 工具使用规定。</p>
+                </details>
             </div>
         </section>
 
