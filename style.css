@@ -664,6 +664,11 @@ code {
     --module-soft: rgba(79, 142, 220, 0.12);
 }
 
+.module-card:nth-child(7) {
+    --module-accent: #5f7bd8;
+    --module-soft: rgba(95, 123, 216, 0.12);
+}
+
 #knowledge-map > .section-head,
 #knowledge-map > .knowledge-graph-shell {
     width: min(1640px, 100%);
@@ -1256,6 +1261,211 @@ code {
     background: rgba(215, 154, 43, 0.12);
     border-left: 4px solid var(--gold);
     border-radius: 8px;
+}
+
+.agent-entry-section {
+    width: auto;
+    max-width: none;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: #ffffff;
+    background:
+        linear-gradient(135deg, rgba(27, 59, 112, 0.96), rgba(42, 90, 158, 0.94)),
+        var(--blue-dark);
+}
+
+.agent-entry-layout {
+    display: grid;
+    grid-template-columns: 340px minmax(0, 1fr);
+    gap: 46px;
+    align-items: center;
+    width: min(1120px, 100%);
+    margin: 0 auto;
+}
+
+.agent-robot-visual {
+    position: relative;
+    min-height: 300px;
+    display: grid;
+    place-items: center;
+}
+
+.robot-antenna {
+    position: absolute;
+    top: 42px;
+    left: 50%;
+    width: 4px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.72);
+    transform: translateX(-50%);
+}
+
+.robot-antenna::before {
+    content: "";
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    background: var(--gold);
+    border: 4px solid rgba(255, 255, 255, 0.92);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 24px rgba(215, 154, 43, 0.55);
+}
+
+.robot-head {
+    position: absolute;
+    top: 78px;
+    left: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    width: 190px;
+    height: 126px;
+    padding: 34px 38px 28px;
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(226, 241, 255, 0.9)),
+        #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 34px 34px 26px 26px;
+    box-shadow: 0 28px 70px rgba(4, 18, 43, 0.28);
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+.robot-head::before,
+.robot-head::after {
+    content: "";
+    position: absolute;
+    top: 52px;
+    width: 22px;
+    height: 42px;
+    background: rgba(79, 142, 220, 0.75);
+    border-radius: 999px;
+}
+
+.robot-head::before {
+    left: -18px;
+}
+
+.robot-head::after {
+    right: -18px;
+}
+
+.robot-eye {
+    width: 34px;
+    height: 34px;
+    background: radial-gradient(circle at 35% 35%, #ffffff 0 18%, var(--sky) 20% 45%, var(--blue) 46% 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 18px rgba(79, 142, 220, 0.5);
+}
+
+.robot-mouth {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 64px;
+    height: 10px;
+    background: var(--blue-dark);
+    border-radius: 999px;
+}
+
+.robot-body {
+    position: absolute;
+    top: 190px;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    gap: 10px;
+    width: 154px;
+    height: 116px;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--blue), #5f7bd8);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 32px;
+    box-shadow: 0 28px 70px rgba(4, 18, 43, 0.25);
+    transform: translateX(-50%);
+}
+
+.robot-body::before,
+.robot-body::after {
+    content: "";
+    position: absolute;
+    top: 36px;
+    width: 42px;
+    height: 16px;
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 999px;
+}
+
+.robot-body::before {
+    left: -34px;
+    transform: rotate(-22deg);
+}
+
+.robot-body::after {
+    right: -34px;
+    transform: rotate(22deg);
+}
+
+.robot-body span {
+    display: inline-grid;
+    place-items: center;
+    width: 58px;
+    height: 38px;
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    border-radius: 12px;
+    font-size: 1.35rem;
+    font-weight: 950;
+}
+
+.robot-body i {
+    width: 74px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.34);
+    border-radius: 999px;
+}
+
+.robot-shadow {
+    position: absolute;
+    bottom: 4px;
+    left: 50%;
+    width: 190px;
+    height: 32px;
+    background: rgba(4, 18, 43, 0.22);
+    border-radius: 50%;
+    filter: blur(4px);
+    transform: translateX(-50%);
+}
+
+.agent-entry-copy h2 {
+    margin: 0;
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    line-height: 1.12;
+}
+
+.agent-entry-copy p:not(.eyebrow) {
+    max-width: 680px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.agent-entry-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 22px 0 26px;
+}
+
+.agent-entry-points span {
+    padding: 9px 12px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    font-weight: 900;
 }
 
 .chat-panel {
@@ -2348,6 +2558,21 @@ code {
         grid-template-columns: 1fr;
     }
 
+    .agent-entry-layout {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        text-align: center;
+    }
+
+    .agent-entry-copy p:not(.eyebrow) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .agent-entry-points {
+        justify-content: center;
+    }
+
     .chat-panel {
         grid-template-rows: auto minmax(360px, 60vh) auto;
     }
@@ -2440,6 +2665,51 @@ code {
 
     .chat-form {
         grid-template-columns: 1fr;
+    }
+
+    .agent-entry-section {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .agent-robot-visual {
+        min-height: 260px;
+    }
+
+    .robot-antenna {
+        top: 24px;
+    }
+
+    .robot-head {
+        top: 60px;
+        width: 164px;
+        height: 112px;
+        padding: 30px 32px 24px;
+        border-radius: 28px 28px 22px 22px;
+    }
+
+    .robot-eye {
+        width: 28px;
+        height: 28px;
+    }
+
+    .robot-body {
+        top: 165px;
+        width: 134px;
+        height: 100px;
+    }
+
+    .robot-body::before,
+    .robot-body::after {
+        width: 32px;
+    }
+
+    .robot-body::before {
+        left: -25px;
+    }
+
+    .robot-body::after {
+        right: -25px;
     }
 
     .chat-message {
