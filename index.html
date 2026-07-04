@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>生成式AI科研诚信教育平台</title>
-    <link rel="stylesheet" href="style.css?v=20260704-guide">
+    <link rel="stylesheet" href="style.css?v=20260704-graph">
 </head>
 
 <body>
@@ -66,6 +66,97 @@
                 <a class="module-card" href="agent.html"><span>04</span><h3>AI 智能体</h3><p>与“AI科研诚信官”模拟对话，获得学习提示和风险提醒。</p></a>
                 <a class="module-card" href="assessment.html"><span>05</span><h3>在线测评</h3><p>通过题目检测学习效果和风险意识。</p></a>
                 <a class="module-card" href="resources.html"><span>06</span><h3>学习资源中心</h3><p>观看视频、下载模板和自查清单。</p></a>
+            </div>
+        </section>
+
+        <section id="knowledge-map" class="section muted">
+            <div class="section-head with-action">
+                <div>
+                    <p class="eyebrow">Knowledge Graph</p>
+                    <h2>科研诚信教育平台知识图谱</h2>
+                    <p>把科研全过程、AI 使用边界、风险案例、政策规范和学习资源串联成一张可探索的学习地图。</p>
+                </div>
+                <button class="btn outline" type="button" data-graph-toggle>展开图谱信息</button>
+            </div>
+
+            <div class="knowledge-graph-shell">
+                <div class="graph-tabs" aria-label="知识图谱快捷入口">
+                    <button type="button" data-graph-node="core">总览</button>
+                    <button type="button" data-graph-node="process">科研全过程</button>
+                    <button type="button" data-graph-node="ai">AI 使用边界</button>
+                    <button type="button" data-graph-node="risk">风险案例</button>
+                    <button type="button" data-graph-node="policy">规范体系</button>
+                </div>
+
+                <div class="knowledge-graph" aria-label="科研诚信与AI辅助科研知识图谱">
+                    <svg class="graph-lines" viewBox="0 0 1000 760" aria-hidden="true">
+                        <path class="line line-soft line-orbit" d="M210 380 C230 160 770 160 790 380 C770 600 230 600 210 380" />
+                        <path class="line line-blue" d="M500 380 L215 380" />
+                        <path class="line line-purple" d="M500 380 L785 380" />
+                        <path class="line line-green" d="M500 380 L500 110" />
+                        <path class="line line-red" d="M500 380 L500 640" />
+                        <path class="line line-gold" d="M500 450 L500 535" />
+                        <path class="line line-soft" d="M215 380 C285 210 390 135 500 110" />
+                        <path class="line line-soft" d="M500 110 C620 135 720 210 785 380" />
+                        <path class="line line-soft" d="M215 380 C280 545 385 625 500 640" />
+                        <path class="line line-soft" d="M785 380 C720 545 615 625 500 640" />
+                        <path class="line line-dashed line-green" d="M500 110 L380 92 M500 110 L620 92 M500 110 L675 205 M500 110 L325 205" />
+                        <path class="line line-dashed line-blue" d="M215 380 L95 205 M215 380 L78 300 M215 380 L92 505 M215 380 L175 620" />
+                        <path class="line line-dashed line-purple" d="M785 380 L905 205 M785 380 L922 300 M785 380 L908 505 M785 380 L825 620" />
+                        <path class="line line-dashed line-red" d="M500 640 L315 625 M500 640 L685 625 M500 640 L360 705 M500 640 L640 705" />
+                    </svg>
+
+                    <button class="graph-node graph-core active" type="button" data-graph-node="core">
+                        <span>科研诚信</span>
+                        <strong>与 AI 辅助科研</strong>
+                    </button>
+                    <button class="graph-node node-process" type="button" data-graph-node="process">
+                        <span>科研全过程</span>
+                        <small>选题 · 数据 · 写作 · 交流</small>
+                    </button>
+                    <button class="graph-node node-policy" type="button" data-graph-node="policy">
+                        <span>规范体系</span>
+                        <small>政策 · 伦理 · 发表 · 评价</small>
+                    </button>
+                    <button class="graph-node node-ai" type="button" data-graph-node="ai">
+                        <span>AI 辅助科研行为</span>
+                        <small>Allowed / Caution / Prohibited</small>
+                    </button>
+                    <button class="graph-node node-risk" type="button" data-graph-node="risk">
+                        <span>学术风险与不端</span>
+                        <small>造假 · 篡改 · 代写 · 隐私</small>
+                    </button>
+                    <button class="graph-node node-learning" type="button" data-graph-node="learning">
+                        <span>学习中心</span>
+                        <small>视频 · 测评 · AI 科研诚信官</small>
+                    </button>
+
+                    <button class="graph-node mini-node node-allowed" type="button" data-graph-node="allowed">合理使用</button>
+                    <button class="graph-node mini-node node-caution" type="button" data-graph-node="caution">限制性使用</button>
+                    <button class="graph-node mini-node node-prohibited" type="button" data-graph-node="prohibited">禁止使用</button>
+                    <button class="graph-node mini-node node-governance" type="button" data-graph-node="governance">披露与留痕</button>
+
+                    <button class="graph-node micro-node process-literature" type="button" data-graph-node="literature">文献检索</button>
+                    <button class="graph-node micro-node process-design" type="button" data-graph-node="design">研究设计</button>
+                    <button class="graph-node micro-node process-data" type="button" data-graph-node="data">数据采集</button>
+                    <button class="graph-node micro-node process-analysis" type="button" data-graph-node="analysis">统计分析</button>
+                    <button class="graph-node micro-node process-writing" type="button" data-graph-node="writing">论文写作</button>
+                    <button class="graph-node micro-node process-share" type="button" data-graph-node="share">学术交流</button>
+
+                    <button class="graph-node micro-node policy-topic" type="button" data-graph-node="topic">选题规范</button>
+                    <button class="graph-node micro-node policy-data" type="button" data-graph-node="policyData">数据规范</button>
+                    <button class="graph-node micro-node policy-citation" type="button" data-graph-node="citation">引用规范</button>
+                    <button class="graph-node micro-node policy-author" type="button" data-graph-node="author">署名发表</button>
+                    <button class="graph-node micro-node policy-conflict" type="button" data-graph-node="conflict">利益冲突</button>
+                    <button class="graph-node micro-node policy-review" type="button" data-graph-node="review">同行评议</button>
+
+                    <button class="graph-node micro-node risk-data" type="button" data-graph-node="riskData">数据造假</button>
+                    <button class="graph-node micro-node risk-image" type="button" data-graph-node="imageRisk">图像篡改</button>
+                    <button class="graph-node micro-node risk-ai" type="button" data-graph-node="aiGhost">AI 代写</button>
+                    <button class="graph-node micro-node risk-ref" type="button" data-graph-node="refRisk">虚假引用</button>
+                </div>
+
+                <aside class="graph-detail-panel" id="graph-detail-panel" aria-live="polite"></aside>
             </div>
         </section>
 
@@ -500,6 +591,7 @@
     <script src="js/data.js"></script>
     <script src="js/main.js"></script>
     <script src="js/cases.js"></script>
+    <script src="js/knowledge-graph.js"></script>
 </body>
 
 </html>
