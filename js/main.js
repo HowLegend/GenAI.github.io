@@ -30,6 +30,25 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  document.querySelectorAll("[data-video-play]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const card = button.closest(".video-card");
+      const video = card?.querySelector("video");
+      if (!video) return;
+      video.controls = true;
+      card.classList.add("is-playing");
+      video.play();
+    });
+  });
+
+  document.querySelectorAll("[data-settings-save]").forEach((button) => {
+    button.addEventListener("click", () => {
+      button.textContent = "已保存";
+      button.classList.add("signed");
+      button.setAttribute("aria-live", "polite");
+    });
+  });
+
   document.querySelectorAll("[data-pledge-button]").forEach((button) => {
     button.addEventListener("click", () => {
       button.textContent = "已签署";
