@@ -140,6 +140,41 @@ code {
     outline: 0;
 }
 
+.site-nav .account-shortcut {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 46px;
+    min-width: 112px;
+    padding: 0 18px;
+    color: var(--blue-dark);
+    background: rgba(42, 90, 158, 0.08);
+    border: 1px solid rgba(42, 90, 158, 0.12);
+    border-radius: 8px;
+    font-weight: 900;
+}
+
+.site-nav .account-shortcut:hover,
+.site-nav .account-shortcut:focus-visible,
+.site-nav .account-shortcut.active {
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--blue-dark), var(--blue));
+    border-color: transparent;
+}
+
+.site-nav .logout-link {
+    color: var(--red);
+    background: rgba(184, 69, 55, 0.08);
+    border-color: rgba(184, 69, 55, 0.14);
+}
+
+.site-nav .logout-link:hover,
+.site-nav .logout-link:focus-visible,
+.site-nav .logout-link.active {
+    color: #ffffff;
+    background: linear-gradient(135deg, #8f2f26, var(--red));
+}
+
 .account-menu {
     position: relative;
 }
@@ -2793,6 +2828,7 @@ code {
         left: 5vw;
         display: grid;
         gap: 4px;
+        justify-items: stretch;
         padding: 10px;
         background: var(--surface);
         border: 1px solid var(--line);
@@ -2810,6 +2846,16 @@ code {
     }
 
     .site-nav a {
+        padding: 12px;
+    }
+
+    .site-nav .account-shortcut {
+        width: 100%;
+        min-height: 46px;
+        justify-self: stretch;
+        align-self: stretch;
+        justify-content: flex-start;
+        min-width: 0;
         padding: 12px;
     }
 
